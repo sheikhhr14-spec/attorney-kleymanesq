@@ -19,6 +19,8 @@
  */
 
 @theme inline {
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -62,26 +64,26 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --radius: 0.25rem;
+  --background: oklch(0.96 0.021 91.7);
+  --foreground: oklch(0.31 0.07 162.5);
+  --card: oklch(0.985 0.01 91.7);
+  --card-foreground: oklch(0.31 0.07 162.5);
+  --popover: oklch(0.985 0.01 91.7);
+  --popover-foreground: oklch(0.31 0.07 162.5);
+  --primary: oklch(0.36 0.09 162.5);
+  --primary-foreground: oklch(0.96 0.021 91.7);
+  --secondary: oklch(0.53 0.11 162.5);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: oklch(0.92 0.024 91.7);
+  --muted-foreground: oklch(0.47 0.035 162.5);
+  --accent: oklch(0.72 0.10 88.5);
+  --accent-foreground: oklch(0.29 0.07 162.5);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.36 0.09 162.5 / 18%);
+  --input: oklch(0.96 0.021 91.7 / 14%);
+  --ring: oklch(0.72 0.10 88.5);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +142,26 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    letter-spacing: 0;
+    margin: 0;
   }
+
+  html { scroll-behavior: smooth; }
+
+  ::selection { background: color-mix(in oklab, var(--accent) 45%, transparent); }
+}
+
+@keyframes editorial-reveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility editorial-reveal {
+  animation: editorial-reveal 700ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .editorial-reveal { animation: none; }
 }
