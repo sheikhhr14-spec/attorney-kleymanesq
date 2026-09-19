@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, Scale } from "lucide-react";
-import heroPortrait from "../assets/katherine-hero-suit.png";
-import officePortrait from "../assets/katherine-office.png";
+import heroPortrait from "../assets/katherine-actual-hero.png";
+import officePortrait from "../assets/katherine-actual-office.png";
 
 const SITE = "https://www.kleymanesq.com";
 const freeReview = "https://calendly.com/kathykleyman/freeconsultation?back=1";
