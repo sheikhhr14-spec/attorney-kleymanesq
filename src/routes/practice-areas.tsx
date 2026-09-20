@@ -1,0 +1,16 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
+import { ConsultationBand, PageHero, SectionLabel, SiteShell } from "@/components/site-shell";
+import { pageMeta, practices } from "@/lib/site-content";
+
+const title = "Employment Law Practice Areas | New York & California";
+const description = "Explore employee-side representation for wrongful termination, retaliation, discrimination, and workplace harassment in New York and California.";
+
+export const Route = createFileRoute("/practice-areas")({
+  head: () => ({ ...pageMeta(title, description, "/practice-areas"), scripts: [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "ItemList", name: "Employment law practice areas", itemListElement: practices.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: `https://www.kleymanesq.com/practice-areas/${item.slug}` })) }) }] }),
+  component: PracticeAreasPage,
+});
+
+function PracticeAreasPage() {
+  return <SiteShell><PageHero eyebrow="Practice Areas" title="Employment counsel built around the worker." intro="Katherine represents employees facing career-altering workplace disputes. Each matter begins with the facts, the timeline, and the outcome the employee wants to pursue." /><section className="bg-card px-5 py-16 sm:px-8 lg:py-24"><div className="mx-auto max-w-7xl"><div className="grid gap-px border border-border bg-border md:grid-cols-2">{practices.map((item, index) => <article key={item.slug} className="bg-card p-8 lg:p-10"><span className="font-serif text-sm text-secondary">0{index + 1}</span><h2 className="mt-8 font-serif text-2xl font-bold text-primary">{item.title}</h2><p className="mt-4 leading-relaxed text-foreground/70">{item.summary}</p><Link to="/practice-areas/$slug" params={{ slug: item.slug }} className="mt-7 inline-flex items-center gap-2 font-semibold text-primary hover:text-secondary">Learn about {item.shortTitle.toLowerCase()} <ArrowRight size={16} /></Link></article>)}</div></div></section><section className="px-5 py-16 sm:px-8"><div className="mx-auto max-w-3xl text-center"><SectionLabel>Serving two states</SectionLabel><h2 className="mt-4 font-serif text-3xl font-bold text-primary">New York and California employment law</h2><p className="mt-5 leading-relaxed text-foreground/70">State and federal protections can overlap, but rules and deadlines differ. Visit the dedicated <Link to="/new-york" className="font-semibold text-primary underline">New York</Link> and <Link to="/california" className="font-semibold text-primary underline">California</Link> pages for location-focused information.</p></div></section><ConsultationBand /></SiteShell>;
+}
