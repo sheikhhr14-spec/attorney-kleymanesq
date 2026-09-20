@@ -6,7 +6,7 @@ import { pageMeta, practices } from "@/lib/site-content";
 const title = "Employment Law Practice Areas | New York & California";
 const description = "Explore employee-side representation for wrongful termination, retaliation, discrimination, and workplace harassment in New York and California.";
 
-export const Route = createFileRoute("/practice-areas")({
+export const Route = createFileRoute("/practice-areas/")({
   head: () => ({ ...pageMeta(title, description, "/practice-areas"), scripts: [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "ItemList", name: "Employment law practice areas", itemListElement: practices.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: `https://www.kleymanesq.com/practice-areas/${item.slug}` })) }) }] }),
   component: PracticeAreasPage,
 });
