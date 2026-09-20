@@ -2,25 +2,27 @@
 
 > Plaintiff-side employment attorney representing employees in New York and California in wrongful termination, retaliation, discrimination, and workplace harassment matters.
 
-Katherine Kleyman is an employment lawyer and former corporate counsel, licensed in New York and California, and a graduate of Fordham University School of Law. She represents workers (not employers) and offers a free case review as well as a paid strategy session for employees who are still employed. Contingency-based representation is available in qualified cases.
+Katherine Kleyman is a former corporate counsel and Fordham University School of Law graduate. She represents workers, not employers. Free case reviews are available for potential employment claims, and paid strategy sessions are available for employees seeking focused guidance while still employed. Contingency-based representation is available in qualified cases.
 
 Contact: 1-646-583-5001 · 221 Kings Hwy, Brooklyn, NY 11223
-Service areas: New York City (Brooklyn, Manhattan, Queens, Bronx, Staten Island), Long Island, Westchester, and across California including Los Angeles, San Francisco, San Diego, and San Jose.
+Canonical website: https://www.kleymanesq.com
 
-## Pages
+## Primary pages
 
-- [Home](/): Practice areas, attorney background, consultation options, service areas, and FAQ.
+- [Home](https://www.kleymanesq.com/): Attorney overview, practice areas, New York and California coverage, and consultation options.
+- [About Katherine](https://www.kleymanesq.com/about): Former corporate counsel experience, Fordham Law education, NY and CA admissions, and employee-only representation.
+- [Practice Areas](https://www.kleymanesq.com/practice-areas): Overview of employee-side employment law services.
+- [Wrongful Termination](https://www.kleymanesq.com/practice-areas/wrongful-termination): Review of potentially unlawful termination matters.
+- [Workplace Retaliation](https://www.kleymanesq.com/practice-areas/retaliation): Adverse action after protected workplace activity.
+- [Workplace Discrimination](https://www.kleymanesq.com/practice-areas/discrimination): Unlawful treatment based on protected characteristics.
+- [Workplace Harassment](https://www.kleymanesq.com/practice-areas/workplace-harassment): Hostile, abusive, or sexually harassing workplace conduct.
+- [New York Employment Law](https://www.kleymanesq.com/new-york): Representation in New York City, Long Island, Westchester, and statewide.
+- [California Employment Law](https://www.kleymanesq.com/california): Representation in Los Angeles, San Francisco, San Diego, San Jose, Orange County, Sacramento, Oakland, and statewide.
+- [Employment Law FAQ](https://www.kleymanesq.com/faq): General answers about claims, fees, deadlines, and consultations.
+- [Contact](https://www.kleymanesq.com/contact): Free case review, paid strategy session, telephone, and Brooklyn office details.
 
-## Sections
+## Important
 
-- [Practice Areas](/#practice): Wrongful termination, retaliation, discrimination, workplace harassment.
-- [About Katherine](/#about): Former corporate counsel background, Fordham Law, NY and CA admissions.
-- [How It Works](/#process): Case review, evaluation, strategy, and resolution.
-- [Locations Served](/#locations): New York and California service areas.
-- [Consultations](/#consultation): Free case review and paid strategy session.
-- [FAQ](/#faq): Common questions about employment claims, deadlines, fees, and next steps.
-- [Contact](/#contact): Phone, office address, and booking links.
-
-## Optional
-
-- Attorney Advertising. Information on this site is general and not legal advice. Prior results do not guarantee a similar outcome.
+- Attorney Advertising. Information is general and not legal advice.
+- Prior results do not guarantee a similar outcome.
+- Contacting the office does not create an attorney-client relationship.
