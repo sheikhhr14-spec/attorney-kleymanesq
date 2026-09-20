@@ -64,7 +64,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 border-b border-primary-foreground/15 pb-10 md:grid-cols-4">
             <div><p className="font-serif text-xl font-bold">Katherine Kleyman, Esq.</p><p className="mt-4 text-sm text-primary-foreground/60">Employment counsel for workers in New York and California.</p></div>
-            <div><SectionLabel inverse>Practice Areas</SectionLabel><div className="mt-4 flex flex-col gap-2.5 text-sm text-primary-foreground/70">{practices.map((item) => <Link key={item.slug} to={`/practice-areas/${item.slug}`} className="hover:text-primary-foreground">{item.shortTitle}</Link>)}</div></div>
+            <div><SectionLabel inverse>Practice Areas</SectionLabel><div className="mt-4 flex flex-col gap-2.5 text-sm text-primary-foreground/70">{practices.map((item) => <Link key={item.slug} to="/practice-areas/$slug" params={{ slug: item.slug }} className="hover:text-primary-foreground">{item.shortTitle}</Link>)}</div></div>
             <div><SectionLabel inverse>Locations</SectionLabel><div className="mt-4 flex flex-col gap-2.5 text-sm text-primary-foreground/70"><Link to="/new-york">New York</Link><Link to="/california">California</Link><Link to="/about">About Katherine</Link><Link to="/faq">FAQ</Link></div></div>
             <div><SectionLabel inverse>Contact</SectionLabel><div className="mt-4 flex flex-col gap-3 text-sm text-primary-foreground/70"><a href="tel:16465835001">1-646-583-5001</a><p>221 Kings Hwy<br />Brooklyn, NY 11223</p><a href={FREE_REVIEW_URL}>Free Case Review</a><a href={STRATEGY_SESSION_URL}>Paid Strategy Session</a></div></div>
           </div>
