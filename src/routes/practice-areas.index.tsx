@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { ConsultationBand, PageHero, SectionLabel, SiteShell } from "@/components/site-shell";
-import { pageMeta, practices } from "@/lib/site-content";
+import { employmentMatters, pageMeta, practices } from "@/lib/site-content";
 
 const title = "Employment Law Practice Areas | New York & California";
 const description = "Explore employee-side representation for wrongful termination, retaliation, discrimination, and workplace harassment in New York and California.";
