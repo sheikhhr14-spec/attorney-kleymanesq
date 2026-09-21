@@ -7,7 +7,7 @@ import officePortrait from "@/assets/katherine-actual-office.png";
 import { employmentMatters, FREE_REVIEW_URL, pageMeta, practices, SITE_URL } from "@/lib/site-content";
 
 const title = "Employment Lawyer for Employees in New York & California | Katherine Kleyman";
-const description = "Katherine Kleyman, Esq. represents employees in New York and California in wrongful termination, retaliation, discrimination, and workplace harassment matters.";
+const description = "Katherine Kleyman, Esq. represents employees in New York and California in wrongful termination, retaliation, discrimination, harassment, wage and hour violations, whistleblower retaliation, FMLA, FEHA, NYSHRL, and more.";
 
 const schema = {
   "@context": "https://schema.org",
