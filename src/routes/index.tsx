@@ -12,7 +12,7 @@ const description = "Katherine Kleyman, Esq. represents employees in New York an
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": ["Attorney", "LegalService"], "@id": `${SITE_URL}/#practice`, name: "Katherine Kleyman, Esq.", url: SITE_URL, telephone: "+1-646-583-5001", description, address: { "@type": "PostalAddress", streetAddress: "221 Kings Hwy", addressLocality: "Brooklyn", addressRegion: "NY", postalCode: "11223", addressCountry: "US" }, areaServed: [{ "@type": "State", name: "New York" }, { "@type": "State", name: "California" }], founder: { "@type": "Person", name: "Katherine Kleyman", honorificSuffix: "Esq.", jobTitle: "Employment Attorney", alumniOf: { "@type": "CollegeOrUniversity", name: "Fordham University School of Law" } } },
+    { "@type": ["Attorney", "LegalService"], "@id": `${SITE_URL}/#practice`, name: "Katherine Kleyman, Esq.", url: SITE_URL, telephone: "+1-646-583-5001", description, address: { "@type": "PostalAddress", streetAddress: "221 Kings Hwy", addressLocality: "Brooklyn", addressRegion: "NY", postalCode: "11223", addressCountry: "US" }, areaServed: [{ "@type": "State", name: "New York" }, { "@type": "State", name: "California" }], founder: { "@type": "Person", name: "Katherine Kleyman", honorificSuffix: "Esq.", jobTitle: "Employment Attorney", alumniOf: { "@type": "CollegeOrUniversity", name: "Fordham University School of Law" } }, hasOfferCatalog: { "@type": "OfferCatalog", name: "Employment Law Services", itemListElement: employmentMatters.map((matter) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: matter } })) } },
     { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: SITE_URL, name: "Katherine Kleyman, Esq." },
   ],
 };
