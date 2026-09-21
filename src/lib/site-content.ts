@@ -12,6 +12,23 @@ export type Practice = {
   process: string[];
 };
 
+export const employmentMatters: string[] = [
+  "Wrongful termination",
+  "Discrimination (race, gender, age, disability, and more)",
+  "Harassment (sexual, verbal, or physical)",
+  "Wage and hour violations",
+  "Whistleblower retaliation",
+  "Employee misclassification",
+  "Missed meals and rest breaks",
+  "Unpaid overtime",
+  "Hostile work environment",
+  "Family and Medical Leave Act (FMLA) violations",
+  "California Fair Employment and Housing Act (FEHA) violations",
+  "New York State Human Rights Law (NYSHRL) violations",
+  "Breach of employment contract",
+  "Retaliation for reporting unsafe or unlawful conditions",
+];
+
 export const practices: Practice[] = [
   {
     slug: "wrongful-termination",
