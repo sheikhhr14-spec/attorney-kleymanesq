@@ -29,7 +29,7 @@ function HomePage() {
         <div className="editorial-reveal lg:col-span-7">
           <SectionLabel>Employment law · New York & California</SectionLabel>
           <h1 className="mt-5 max-w-4xl text-balance font-serif text-4xl font-bold leading-tight text-primary sm:text-5xl lg:text-6xl">Employment counsel for the people who power the workplace.</h1>
-          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/75">Katherine Kleyman, Esq. represents employees — never employers — in wrongful termination, retaliation, discrimination, and workplace harassment matters.</p>
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/75">Workplace injustice can turn a person's life upside down. Katherine Kleyman, Esq. provides personalized, results-driven representation grounded in compassion, transparency, and fierce advocacy — for employees, never employers.</p>
           <div className="mt-8 flex flex-wrap gap-4"><Button asChild className="h-auto rounded-sm px-6 py-4"><a href={FREE_REVIEW_URL}>Free Case Review <ArrowRight /></a></Button><Button asChild variant="outline" className="h-auto rounded-sm px-6 py-4"><Link to="/about">Meet Katherine</Link></Button></div>
           <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3 border-t border-border pt-6 text-xs font-semibold uppercase tracking-wider text-foreground/60"><span>Former corporate counsel</span><span>Fordham Law</span><span>Licensed in NY & CA</span></div>
         </div>
